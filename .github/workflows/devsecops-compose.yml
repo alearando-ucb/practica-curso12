@@ -64,7 +64,6 @@ jobs:
         image-ref: api-gateway:latest
         severity: CRITICAL,HIGH
         exit-code: 1
-
 # 6. CD – Levantar sistema (solo si todo pasó)
     - name: Deploy with Docker Compose
       if: success()
